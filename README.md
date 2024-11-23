@@ -8,7 +8,6 @@ In this program:
 1. **Threads**:
    - **RelLedFlashing Task**: Toggles a Red LED and attempts to access the shared Blue LED resource.
    - **GreenLedFlass Task**: Toggles a Green LED and also attempts to access the shared Blue LED resource.
-   - **Default Task**: A placeholder task running at a low priority.
    
 2. **Access Contention**:
    - Both the `RelLedFlashing` and `GreenLedFlass` tasks call the `accessData()` function to	hold	data	that	is	used	by	both	tasks	(a	datastore). In	general,	data	can	be	written	to	and	read	from	the	store
